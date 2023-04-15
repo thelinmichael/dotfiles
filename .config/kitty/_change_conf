@@ -1,0 +1,1 @@
+ln -f -s ./kitty-themes/themes/Broadcast.conf theme.conf
