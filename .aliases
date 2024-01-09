@@ -4,6 +4,7 @@ alias l='ls -CF'
 
 alias lg='lazygit'
 alias ld='lazydocker'
+alias lsq='lazysql'
 alias k='kubectl'
 
 # dotfiles

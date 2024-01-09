@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "nightfox",
     },
   },
   {
@@ -22,6 +22,9 @@ return {
       -- load the colorscheme here
       --vim.cmd([[colorscheme tokyonight-night]])
     end,
+  },
+  {
+    "EdenEast/nightfox.nvim",
   },
   {
     "ellisonleao/gruvbox.nvim", -- theme
