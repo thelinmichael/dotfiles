@@ -1,3 +1,6 @@
+-- Connecting and visualising databases
+-- Currently trying out lazysql instead of dadbod
+
 local Util = require("lazyvim.util")
 
 return {
@@ -20,6 +23,7 @@ return {
     end,
   },
   {
+    -- URL format:
     -- mysql://user:password@localhost:3306
     "jorgerojas26/lazysql",
     config = function()

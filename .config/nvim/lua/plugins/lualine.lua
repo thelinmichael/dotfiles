@@ -1,3 +1,5 @@
+-- Lualine behaviour
+
 return {
   {
     "nvim-lualine/lualine.nvim",

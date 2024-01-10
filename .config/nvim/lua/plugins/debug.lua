@@ -1,3 +1,7 @@
+-- Everything debugging
+-- Limited to Go support
+-- Update using Mason
+
 return {
   {
     "mfussenegger/nvim-dap",

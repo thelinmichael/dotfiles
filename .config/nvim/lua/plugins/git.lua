@@ -1,8 +1,6 @@
+-- Git related plugins. Also using lazygit via LazyVim
+
 return {
-  {
-    "tpope/vim-fugitive",
-    enabled = false,
-  },
   {
     "lewis6991/gitsigns.nvim",
     config = function(opts)

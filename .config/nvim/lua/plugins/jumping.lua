@@ -1,3 +1,5 @@
+-- Everything search and jump, e.g. flash, leap, etc.
+
 return {
   {
     "folke/flash.nvim",
