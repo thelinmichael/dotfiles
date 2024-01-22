@@ -1,11 +1,18 @@
 These are my dotfiles. There are many like them, but these ones are mine.
 
-Config is used on Ubuntu and Fedora. Configuration for i3wm, kitty, tmux, neovim (based on LazyVim), rofi, polybar and zsh. Neovim is geared towards development in Go.
+Config is used on Ubuntu and Fedora.
+
+Window manager: i3 and Sway
+Terminal: Kitty
+Terminal multiplexer: tmux
+Editor: Neovim (based on LazyVim, using Kanagawa theme)
+Launcher: rofi
+Shell: zsh
+Bar: polybar and waybar
 
 **Other useful terminal applications**
 
-Applications below may be required by neovim plugins.
-
+Applications below may be required by neovim plugins. Run `:checkhealth` to confirm.
 ```
 - fzf (improve terminal ctrl+r, ctrl+t, alt+c)
 - ripgrep/rg (alternative to grep)
