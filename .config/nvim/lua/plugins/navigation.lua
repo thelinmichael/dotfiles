@@ -83,7 +83,7 @@ return {
       {
         "<leader><leader>",
         "<Cmd>Telescope frecency workspace=CWD<CR>",
-        desc = "Debug this shit (or continue)",
+        desc = "File by frequency/recency",
       },
     },
   },
