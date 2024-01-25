@@ -6,7 +6,7 @@ export GOBIN=$GOPATH/bin # 'go install' installs here
 #-- Not set explicitly yet: GOTOOLDIR, GOROOT
 
 export MASONPATH=$HOME/.local/share/nvim/mason
-export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:/opt/curl:$PATH
+export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:/opt/curl:$HOME/bin/go:$PATH
 
 export TERM=xterm-kitty
 export EDITOR=nvim

@@ -74,4 +74,17 @@ return {
       save_on_toggle = true
     end,
   },
+  {
+    "nvim-telescope/telescope-frecency.nvim",
+    config = function()
+      require("telescope").load_extension("frecency")
+    end,
+    keys = {
+      {
+        "<leader><leader>",
+        "<Cmd>Telescope frecency workspace=CWD<CR>",
+        desc = "Debug this shit (or continue)",
+      },
+    },
+  },
 }
