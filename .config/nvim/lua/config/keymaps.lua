@@ -13,10 +13,6 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
--- Tabs (Sweden style)
-map("n", "ö", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
-map("n", "ä", "<cmd>bnext<cr>", { desc = "Next buffer" })
-
 -- Resolving key shortcut conflict involving mini.comment
 vim.keymap.del("n", "gc")
 vim.keymap.del("n", "gcc")
