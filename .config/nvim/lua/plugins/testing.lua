@@ -1,48 +1,45 @@
 -- Everything testing
 
-local setup = function()
-  local nt = require("neotest")
-  nt.setup({
-    adapters = {
-      require("neotest-go")({
-        experimental = {
-          test_table = true,
-        },
-        args = { "-v -count=1", "-timeout=60s" },
-      }),
-      require("neotest-plenary"),
-    },
-    diagnostic = {
-      enabled = true,
-    },
-    running = {
-      concurrent = false,
-    },
-    status = {
-      enabled = true,
-      virtual_text = false,
-      signs = true,
-    },
-    strategies = {
-      integrated = {
-        width = 180,
-      },
-    },
-  })
-end
-
 return {
   {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
-      "antoinemadec/FixCursorHold.nvim",
       "nvim-neotest/neotest-go",
       "nvim-neotest/neotest-plenary",
     },
     cmd = "Neotest",
-    config = setup,
+    config = function()
+      local nt = require("neotest")
+      nt.setup({
+        adapters = {
+          require("neotest-go")({
+            experimental = {
+              test_table = true,
+            },
+            args = { "-v -count=1", "-timeout=60s" },
+          }),
+          require("neotest-plenary"),
+        },
+        diagnostic = {
+          enabled = true,
+        },
+        running = {
+          concurrent = false,
+        },
+        status = {
+          enabled = true,
+          virtual_text = false,
+          signs = true,
+        },
+        strategies = {
+          integrated = {
+            width = 180,
+          },
+        },
+      })
+    end,
     keys = {
       -- call test for function in cursor
       {
