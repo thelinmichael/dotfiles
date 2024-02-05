@@ -1,14 +1,16 @@
 These are my dotfiles. There are many like them, but these ones are mine.
 
-Config is used on Ubuntu and Fedora.
+Config is used on Ubuntu 22.04.3 and Fedora.
 
-- Terminal: Kitty
-- Window manager: i3 (and Sway, although not actively used due to Zoom screen sharing issues.)
-- Terminal multiplexer: tmux
-- Editor: Neovim (based on LazyVim, using Kanagawa theme)
-- Launcher: rofi
-- Shell: zsh
-- Bar: polybar (and waybar in Sway)
+- Window Manager: **i3**
+- Terminal: **Kitty**
+- Terminal multiplexer: **tmux**
+- Shell: **zsh**
+- Text editor: **Neovim** (based on LazyVim, using Kanagawa theme)
+- Application launcher: **rofi**
+- Bar: **polybar**
+
+Sway and Waybar not actively used due to issues with screen sharing in Zoom.
 
 **Other useful terminal applications**
 
@@ -21,7 +23,7 @@ Applications below may be required by neovim plugins. Run `:checkhealth` to conf
 - lazygit (git) [lg]
 - nethogs (network monitoring)
 - pass (password manager)
-- eza (replace ls) [ls]
-- btop (replace top)
-- bat (replace cat)
+- eza (replaces ls)
+- btop (replaces top)
+- bat (replaces cat)
 ```
