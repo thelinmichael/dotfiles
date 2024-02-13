@@ -3,12 +3,13 @@
 return {
   {
     "mrjones2014/nvim-ts-rainbow",
+    enabled = true,
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    requires = {
-      "mrjones2014/nvim-ts-rainbow",
-    },
+    --    requires = {
+    --      "mrjones2014/nvim-ts-rainbow",
+    --    },
     opts = function(_, opts)
       -- add tsx and treesitter
       vim.list_extend(opts.ensure_installed, {
@@ -33,6 +34,7 @@ return {
         "yaml",
       })
     end,
+    --[[
     require("nvim-treesitter.configs").setup({
       rainbow = {
         enable = true,
@@ -43,5 +45,6 @@ return {
         -- termcolors = {} -- table of colour name strings
       },
     }),
+    --]]
   },
 }

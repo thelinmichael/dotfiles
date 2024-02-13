@@ -3,6 +3,7 @@
 return {
   {
     "hrsh7th/nvim-cmp",
+    enabled = true,
     opts = function(_, opts)
       opts.completion = {
         completeopt = "menu,noselect",

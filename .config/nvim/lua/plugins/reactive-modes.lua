@@ -1,12 +1,11 @@
 return {
   {
     "rasulomaroff/reactive.nvim",
+    enabled = true,
     config = function()
       require("reactive").setup({
         builtin = {
-          cursorline = true,
           cursor = true,
-          modemsg = true,
         },
       })
     end,

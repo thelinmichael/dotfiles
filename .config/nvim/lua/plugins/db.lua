@@ -6,7 +6,7 @@ local Util = require("lazyvim.util")
 return {
   {
     "kristijanhusak/vim-dadbod-ui",
-    enabled = false,
+    enabled = true,
     dependencies = {
       { "tpope/vim-dadbod", lazy = true },
       { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
@@ -26,6 +26,7 @@ return {
     -- URL format:
     -- mysql://user:password@localhost:3306
     "jorgerojas26/lazysql",
+    enabled = false,
     config = function()
       vim.keymap.set("n", "<leader>sq", function()
         Util.terminal.open({ "lazysql" }, {

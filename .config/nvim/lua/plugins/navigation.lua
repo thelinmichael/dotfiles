@@ -2,10 +2,11 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     dependencies = {
-      "ThePrimeagen/harpoon",
-      config = function()
-        require("telescope").load_extension("harpoon")
-      end,
+      "nvim-lua/plenary.nvim",
+      --      "ThePrimeagen/harpoon",
+      --      config = function()
+      --        require("telescope").load_extension("harpoon")
+      --      end,
     },
     keys = {
       -- add a keymap to browse plugin files
@@ -29,7 +30,7 @@ return {
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
         path_display = {
-          truncate = 3,
+          truncate = 5,
         },
         winblend = 0,
       },
@@ -37,6 +38,7 @@ return {
   },
   {
     "ThePrimeagen/harpoon",
+    enabled = true,
     dependencies = {
       { "nvim-lua/plenary.nvim" },
     },
@@ -76,6 +78,7 @@ return {
   },
   {
     "nvim-telescope/telescope-frecency.nvim",
+    enabled = false,
     config = function()
       require("telescope").load_extension("frecency")
     end,

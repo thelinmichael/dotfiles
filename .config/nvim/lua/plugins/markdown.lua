@@ -3,6 +3,7 @@
 return {
   {
     "ellisonleao/glow.nvim",
+    enabled = true,
     config = function()
       require("glow").setup({
         style = "dark",

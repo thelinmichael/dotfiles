@@ -3,6 +3,7 @@
 return {
   {
     "nvim-lualine/lualine.nvim",
+    enabled = true,
     event = "VeryLazy",
     opts = function(_, opts)
       opts.sections = {
