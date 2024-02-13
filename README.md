@@ -3,14 +3,14 @@ These are my dotfiles. There are many like them, but these ones are mine.
 Config is used on Ubuntu 22.04.3 and Fedora.
 
 - Window Manager: **i3**
-- Terminal: **Kitty**
+- Terminal: **Kitty** (kanagawabones theme)
 - Terminal multiplexer: **tmux**
 - Shell: **zsh**
 - Text editor: **Neovim** (based on LazyVim, using Kanagawa theme)
 - Application launcher: **rofi**
 - Bar: **polybar**
 
-Sway and Waybar not actively used due to issues with screen sharing in Zoom.
+Sway and Waybar not actively used due to issues with screensharing in Zoom.
 
 **Other useful terminal applications**
 
