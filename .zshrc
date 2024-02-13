@@ -83,7 +83,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git docker kubectl fzf golang python pip ripgrep ssh-agent sudo tmux ubuntu)
 
 
-export FZF_BASE=$HOME/bin
+export FZF_BASE=/usr/bin/fzf
 export FZF_DEFAULT_COMMAND="fd --type f"
 
 # Oh My Zsh
