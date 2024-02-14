@@ -6,6 +6,11 @@ return {
     enabled = true,
     event = "VeryLazy",
     opts = function(_, opts)
+      require("lualine").setup({
+        options = {
+          theme = "catppuccin",
+        },
+      })
       opts.sections = {
         lualine_x = { "aerial" },
 

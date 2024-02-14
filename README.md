@@ -3,10 +3,10 @@ These are my dotfiles. There are many like them, but these ones are mine.
 Config is used on Ubuntu 22.04.3 and Fedora.
 
 - Window Manager: **i3**
-- Terminal: **Kitty** (kanagawabones theme)
+- Terminal: **Kitty** (catppuccin-mocha theme)
 - Terminal multiplexer: **tmux**
 - Shell: **zsh**
-- Text editor: **Neovim** (based on LazyVim, using Kanagawa theme)
+- Text editor: **Neovim** (based on LazyVim, using catppuccin-mocha theme)
 - Application launcher: **rofi**
 - Bar: **polybar**
 
@@ -26,4 +26,5 @@ Applications below may be required by neovim plugins. Run `:checkhealth` to conf
 - eza (replaces ls)
 - btop (replaces top)
 - bat (replaces cat)
+- [sysz](https://github.com/joehillen/sysz) (fzf terminal ui for systemctl)
 ```
