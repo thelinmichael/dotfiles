@@ -1,15 +1,9 @@
-# If you come from bash you might have to change your $PATH.
+# Interactive usage
 
-# Go
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin # 'go install' installs here
-#-- Not set explicitly yet: GOTOOLDIR, GOROOT
+# fzf
+export FZF_BASE=/usr/bin/fzf
+export FZF_DEFAULT_COMMAND="fd --type f"
 
-export MASONPATH=$HOME/.local/share/nvim/mason
-export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:/opt/curl:$PATH
-
-export TERM=xterm-kitty
-export EDITOR=nvim
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -80,11 +74,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker kubectl fzf golang python pip ripgrep ssh-agent sudo tmux ubuntu)
-
-
-export FZF_BASE=/usr/bin/fzf
-export FZF_DEFAULT_COMMAND="fd --type f"
+plugins=(git docker kubectl fzf golang python pip ripgrep ssh-agent sudo tmux ubuntu nvm)
 
 # Oh My Zsh
 source $ZSH/oh-my-zsh.sh
@@ -118,7 +108,3 @@ if [ -f ~/.aliases ]; then
 	. ~/.aliases
 fi
 
-export NVM_DIR="$HOME/.nvm"
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
