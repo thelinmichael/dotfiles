@@ -38,7 +38,6 @@ return {
   },
   {
     "ThePrimeagen/harpoon",
-    enabled = true,
     dependencies = {
       { "nvim-lua/plenary.nvim" },
     },
